@@ -1,0 +1,593 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aman Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+<style>
+  ```css
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#08081b;
+color:#fff;
+}
+
+/* Navbar */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+background:#121242;
+display:flex;
+justify-content:space-around;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#ad6beb;
+}
+
+nav ul{
+display:flex;
+flex-wrap:wrap;
+}
+
+nav ul li{
+list-style:none;
+margin:0 15px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ad6beb;
+}
+
+/* Sections */
+
+section{
+padding:100px 10%;
+}
+
+/* Home */
+
+.firstSection{
+min-height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.leftSection{
+flex:1;
+min-width:300px;
+font-size:3rem;
+}
+
+.rightSection{
+flex:1;
+text-align:center;
+}
+
+.rightSection img{
+width:380px;
+height:380px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid #ad6beb;
+box-shadow:0 0 30px #ad6beb;
+transition:.4s;
+}
+
+.rightSection img:hover{
+transform:scale(1.05);
+}
+
+.purple{
+color:#ad6beb;
+}
+
+#element{
+font-weight:bold;
+color:#c4c4c4;
+}
+
+/* Buttons */
+
+.btn{
+display:inline-block;
+padding:12px 28px;
+margin:20px 10px 0 0;
+background:#ad6beb;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+box-shadow:0 0 20px #ad6beb;
+}
+
+/* Heading */
+
+h2{
+text-align:center;
+font-size:35px;
+margin-bottom:40px;
+color:#ad6beb;
+}
+
+/* About */
+
+.about p{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:30px;
+}
+
+/* Grid */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* Cards */
+
+.card{
+background:#121242;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #ad6beb;
+}
+
+.card i{
+font-size:55px;
+margin-bottom:15px;
+color:#ad6beb;
+display:block;
+}
+
+.card p{
+margin-top:10px;
+}
+
+/* Contact */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+.social-icons{
+margin-top:25px;
+}
+
+.social-icons a{
+font-size:32px;
+margin:0 15px;
+color:white;
+transition:.3s;
+}
+
+.social-icons a:hover{
+color:#ad6beb;
+}
+
+/* Footer */
+
+footer{
+background:#121242;
+padding:20px;
+text-align:center;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+height:auto;
+padding:20px;
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+justify-content:center;
+}
+
+.firstSection{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.leftSection{
+font-size:2rem;
+margin-top:30px;
+}
+
+.rightSection img{
+width:260px;
+height:260px;
+}
+
+.btn{
+display:block;
+margin:15px auto;
+width:200px;
+}
+
+}
+```
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Aman's Portfolio</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="firstSection" id="home">
+
+<div class="leftSection">
+
+Hi, My Name is
+
+<span class="purple">Aman</span>
+
+<div>and I am a</div>
+
+<span id="element"></span>
+
+<br>
+
+<a href="#contact" class="btn">Hire Me</a>
+
+<a href="#" class="btn">Resume</a>
+
+</div>
+
+<div class="rightSection">
+
+<img src="dada.jfif" alt="Aman">
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>About Me</h2>
+
+<p>
+
+I am Aman, a passionate Web Developer and Designer. I enjoy creating modern and responsive websites. I also practice Java programming and Data Structures & Algorithms.
+
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<i class="fa-brands fa-html5"></i>
+
+<h3>HTML</h3>
+
+<p>Responsive webpage structure.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-brands fa-css3-alt"></i>
+
+<h3>CSS</h3>
+
+<p>Modern website styling.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-brands fa-js"></i>
+
+<h3>JavaScript</h3>
+
+<p>Dynamic web applications.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-brands fa-java"></i>
+
+<h3>Java</h3>
+
+<p>Object Oriented Programming.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>DSA</h3>
+
+<p>Problem solving skills.</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-brands fa-github"></i>
+
+<h3>GitHub</h3>
+
+<p>Version control and projects.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Frontend Development</h3>
+
+<p>Created responsive websites.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Amazon Clone</h3>
+
+<p>Amazon homepage clone.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Portfolio Website</h3>
+
+<p>Personal website project.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Java Projects</h3>
+
+<p>Java and DSA practice.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>Services</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Web Development</h3>
+
+<p>Modern responsive websites.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Web Design</h3>
+
+<p>UI/UX designing.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Graphic Design</h3>
+
+<p>Creative designs.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Video Editing</h3>
+
+<p>Social media editing.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Amazon Clone</h3>
+
+<p>HTML and CSS project.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Portfolio Website</h3>
+
+<p>Responsive portfolio.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Calculator</h3>
+
+<p>JavaScript project.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Weather App</h3>
+
+<p>API based application.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Me</h2>
+
+<p>Email : aman@example.com</p>
+
+<p>Phone : +91 9876543210</p>
+
+<p>Location : Uttar Pradesh, India</p>
+
+<div class="social-icons">
+
+<a href="#"><i class="fa-brands fa-github"></i></a>
+
+<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Aman Portfolio | All Rights Reserved
+
+</footer>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>
+
+new Typed('#element',{
+
+strings:[
+'Web Developer',
+'Java Developer',
+'Web Designer',
+'Video Editor'
+],
+
+typeSpeed:70,
+
+backSpeed:50,
+
+loop:true
+
+});
+
+</script>
+
+</body>
+
+</html>
+```
